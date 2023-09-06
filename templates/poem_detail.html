@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>{{poem.title}}</h2>
+    <h3>{{poem.author}}</h3>
+    <small>{{poem.created_at}}</small>
+    <p>{{poem.content | safe }}</p>
+{% endblock content %}
